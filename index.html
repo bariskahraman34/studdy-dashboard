@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/logo.ico">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Studdy</title>
+</head>
+<body>
+  <div class="container p-20">
+    <div class="sidebar border-r-30 bg-white p-20">
+      <div class="sidebar-item">
+        <div class="logo">
+          <img src="/images/logo.png" width="40" height="40" alt="">
+          <h2>Studdy</h2>
+        </div>
+        <ul class="menu">
+          <li class="menu-item active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Lessons</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-regular fa-bell"></i>
+              <span>Timetable</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              <span>Homework</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-regular fa-comment"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-solid fa-swatchbook"></i>
+              <span>Assessments</span>
+              <span class="badge">AI</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-item">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-regular fa-circle-question"></i>
+              <span>Support</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main class="main">
+      <header class="header border-r-30 bg-white">
+        <div class="header-item">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+        <div class="header-item d-flex">
+          <div class="notifications">
+            <a href="#">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+          </div>
+          <div class="header-profile-container">
+            <a class="profile-anchor" href="#">
+              <img src="#" width="20" height="20" alt="">
+              <div class="profile">
+                <span class="full-name">James Dean</span>
+                <span class="user-name">@james_dean</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="columns">
+        <div class="col">
+          <section class="welcome-section border-r-30 bg-blue">
+            <div class="welcome-text">
+              <h2>Welcome back, James 👋</h2>
+              <p>
+                You've learned <span class="highlighted-text">70%</span> of your goal this week!
+              </p>
+              <p>Keep it up and improve your progress.</p>
+            </div>
+            <div class="welcome-image-container">
+              <img src="#" alt="">
+            </div>
+          </section>
+          <section class="statistics-section border-r-30">
+            <div class="box-container">
+              <div class="statistic-box bg-white border-r-30 p-20">
+                <div class="task-title">
+                  <h2>Attendance</h2>
+                </div>
+                <div class="completed-task">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>19/20</span>
+                </div>
+                <div class="task-text">
+                  <p>Well done! You're attending all lessons. Kepp going!</p>
+                </div>
+              </div>
+              <div class="statistic-box bg-white border-r-30 p-20">
+                <div class="task-title">
+                  <h2>Homework</h2>
+                </div>
+                <div class="completed-task">
+                  <i class="fa-solid fa-book"></i>
+                  <span>53/56</span>
+                </div>
+                <div class="task-text">
+                  <p>Don't forget about your next homework</p>
+                </div>
+              </div>
+              <div class="statistic-box bg-white border-r-30 p-20">
+                <div class="task-title">
+                  <h2>Rating</h2>
+                  <span class="badge">AI powered <i class="fa-solid fa-bolt"></i></span>
+                </div>
+                <div class="completed-task">
+                  <i class="fa-regular fa-star"></i>
+                  <span>89/100</span>
+                </div>
+                <div class="task-link text-end">
+                  <a href="#" class="blue">Go to report</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="d-grid">
+            <section class="timetable border-r-30 bg-white p-20">
+              <div class="timetable-header">
+                <div class="heading-with-icon">
+                  <h2>Timetable</h2>
+                  <i class="fa-regular fa-calendar"></i>
+                </div>
+                <div>
+                  <small>Mar 28,2024</small>
+                </div>
+              </div>
+              <div class="schedule">
+                <ul class="days">
+                  <li class="day">
+                    <span class="day-name">Mon</span>
+                    <span class="day-number">25</span>
+                  </li>
+                  <li class="day">
+                    <span class="day-name">Tue</span>
+                    <span class="day-number">26</span>
+                  </li>
+                  <li class="day">
+                    <span class="day-name">Wed</span>
+                    <span class="day-number">27</span>
+                  </li>
+                  <li class="day active">
+                    <span class="day-name">Thu</span>
+                    <span class="day-number">28</span>
+                  </li>
+                  <li class="day">
+                    <span class="day-name">Fri</span>
+                    <span class="day-number">29</span>
+                  </li>
+                  <li class="day">
+                    <span class="day-name">Sat</span>
+                    <span class="day-number">30</span>
+                  </li>
+                  <li class="day">
+                    <span class="day-name">Sun</span>
+                    <span class="day-number">31</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="timetable-card-container">
+                <div class="time">08:00</div>
+                <div class="card">
+                  <div class="card-item">
+                    <div class="subject">Algorithms</div>
+                    <div class="participants">
+                      <img class="participant-img" src="#" alt="">
+                      <img class="participant-img" src="#" alt="">
+                      <img class="participant-img" src="#" alt="">
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="time-range">
+                      <span class="start-time">08:00</span> 
+                      <span class="bracket">-</span>
+                      <span class="end-time">09:00</span>
+                    </div>
+                    <div class="lesson bg-blue">Mathematics</div>
+                  </div>
+                </div>
+                <div class="time">09:00</div>
+                <div class="card">
+                  <div class="card-item">
+                    <div class="subject">Levels of organization of living things</div>
+                    <div class="participants">
+                      <img class="participant-img" src="#" alt="">
+                      <img class="participant-img" src="#" alt="">
+                      <img class="participant-img" src="#" alt="">
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <div class="time-range">
+                      <span class="start-time">09:00</span> 
+                      <span class="bracket">-</span>
+                      <span class="end-time">10:00</span>
+                    </div>
+                    <div class="lesson bg-green">Biology</div>
+                  </div>
+                </div>
+                <div class="time">10:00</div>
+                <div class="card">
+                  <div class="card-item">
+                    <div class="subject">Break</div>
+                  </div>
+                  <div class="card-item">
+                    <div class="time-range">
+                      <span class="start-time">10:00</span> 
+                      <span class="bracket">-</span>
+                      <span class="end-time">10:30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="time">10:30</div>
+              </div>
+            </section>
+            <section class="upcoming-events border-r-30 bg-white p-20">
+              <h2 class="heading">Upcoming events</h2>
+              <div class="upcoming-events-card-container">
+                <div class="card">
+                  <a href="#">
+                    <img src="https://picsum.photos/400/200?random=1" alt="">
+                    <div class="content">
+                      <div class="content-top">
+                        <h3>English accents</h3>
+                        <small>18 Apr, 2024, 12:00</small>
+                      </div>
+                      <div class="content-bottom text-end">
+                        <span>More details</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="https://picsum.photos/400/200?random=2" alt="">
+                    <div class="content">
+                      <div class="content-top">
+                        <h3>RoboFest</h3>
+                        <small>20 May, 2024, 15:00</small>
+                      </div>
+                      <div class="content-bottom text-end">
+                        <span>More details</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="https://picsum.photos/400/200?random=3" alt="">
+                    <div class="content">
+                      <div class="content-top">
+                        <h3>AI Introduction</h3>
+                        <small>09 Jun, 2024, 09:30</small>
+                      </div>
+                      <div class="content-bottom text-end">
+                        <span>More details</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#">
+                    <img src="https://picsum.photos/400/200?random=4" alt="">
+                    <div class="content">
+                      <div class="content-top">
+                        <h3>Why engineers are must have</h3>
+                        <small>20 Jun, 2024, 15:00</small>
+                      </div>
+                      <div class="content-bottom text-end">
+                        <span>More details</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col">
+          <section class="homework-progress border-r-30 bg-white p-20">
+            <div class="homework-progress-header">
+              <div class="d-flex space-between">
+                <h2>Homework progress</h2>
+                <div class="filter">
+                  <span>All</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div id="todo" class="tasks-container">
+              <h3>To do</h3>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">
+                      Rational inequalities. AI Assessment #5
+                    </div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>30 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">All about Homestas. Quize</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>29 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-3">
+                    <label for="task-3"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Shapes and Structures</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>03 Apr,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-4">
+                    <label for="task-4"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Word Wonders: Unraveling Language</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>03 Apr,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="on-review" class="tasks-container">
+              <h3>On review</h3>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-6">
+                    <label for="task-6"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Historical Chronicles: Exploring the Past</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>30 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" id="task-7">
+                    <label for="task-7"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Epoch Explorations: Unraveling Timelines</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>30 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="completed" class="tasks-container">
+              <h3>Completed</h3>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" checked="checked" id="task-8">
+                    <label for="task-8"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Physics Phantoms: Unraveling the Lasw of Nature</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>25 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="checkbox" checked="checked" id="task-9">
+                    <label for="task-9"></label>
+                  </div>
+                  <a href="#">
+                    <div class="title">Language Landscapes: Exploring Vocabulary</div>
+                    <div class="deadline">
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <small>Deadline</small>
+                      </div>
+                      <div>
+                        <small>24 Mar,2024</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
