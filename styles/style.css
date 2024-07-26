@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Reset CSS */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,6 +14,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #f1f6fe;
+  font-family: "Roboto", sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -246,7 +249,7 @@ small{
 /* Welcome Section CSS */
 
 .welcome-section{
-  padding: 40px 20px 20px 20px;
+  padding: 40px 40px 20px 40px;
 }
 
 .welcome-section .welcome-text{
