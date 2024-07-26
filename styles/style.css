@@ -105,7 +105,7 @@ small{
 
 .columns{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   gap: 30px;
 }
 
@@ -383,6 +383,7 @@ small{
 
 .timetable .timetable-card-container .card .card-item .participants{
   display: flex;
+  flex-wrap: wrap;
   & img{
     width: 25px;
     height: 25px;
