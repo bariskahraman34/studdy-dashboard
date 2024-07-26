@@ -1,0 +1,546 @@
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f1f6fe;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* Reset CSS End */
+
+/* Global Styles */
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.border-r-30{
+  border-radius: 30px;
+}
+
+.bg-white{
+  background-color: #fff;
+}
+
+.bg-blue{
+  background-color: #076bff;
+  color: #fff;
+}
+
+.blue{
+  color: #076bff;
+}
+
+.bg-green{
+  background-color: #129601;
+  color: #fff;
+}
+
+.highlighted-text{
+  color: #fff;
+  font-weight: 900;
+}
+
+small{
+  color: #83858a;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.heading-with-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.d-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+.columns{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-flex.space-between{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-20{
+  padding: 20px;
+}
+
+/* Global Styles End*/
+
+/* Sidebar CSS */
+
+.sidebar{
+  position: sticky;
+  top: 20px;
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  height: 100dvh;
+}
+
+.sidebar-item .logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.menu-item{
+  padding: 10px 30px;
+  & a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+  }
+}
+
+.menu-item .badge{
+  background-color: #076bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+
+.menu-item.active{
+  background-color: #076bff;
+  border-radius: 15px;
+  & a{
+    color: #fff;
+  }
+}
+
+/* Sidebar CSS End */
+
+/* Header CSS */
+.header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header .header-item .search-bar{
+  background-color: #f6f8fc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & input{
+    width: 350px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  & i{
+    color: #8e949c;
+  }
+}
+
+.header .header-item .notifications a{
+  color: #000;
+  padding: 5px;
+}
+
+.header .header-item.d-flex{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header .header-item .header-profile-container .profile-anchor{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  & img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.header .header-item .header-profile-container .profile-anchor .profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & span{
+    color: #000;
+  }
+  & span:first-child{
+    font-weight: 600;
+  }
+  & span:last-child{
+    font-weight: 100;
+    font-size: 14px;
+  }
+}
+
+/* Header CSS End */
+
+/* Welcome Section CSS */
+
+.welcome-section{
+  padding: 40px 20px 20px 20px;
+}
+
+.welcome-section .welcome-text{
+  & h2{
+    font-size: 40px;
+    font-weight: 900;
+  }
+  & p{
+    line-height: 1.7;
+  }
+}
+
+/* Welcome Section CSS End*/
+
+/* Statistics Section CSS */
+
+.statistics-section .box-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.statistics-section .box-container .statistic-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  & p{
+    font-size: 17px;
+    color: #585858;
+    line-height: 1.2;
+  }
+}
+
+.statistics-section .box-container .statistic-box .task-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statistics-section .box-container .statistic-box .task-title .badge{
+  background-color: #076bff;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.statistics-section .box-container .statistic-box .completed-task{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  & i{
+    font-size: 30px;
+    color: #076bff;
+  }
+  & span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+/* Statistics Section CSS Ends */
+
+/* Timetable Section CSS */
+
+.timetable .timetable-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  & i{
+    color: #076bff;
+    font-size: 30px;
+  }
+}
+
+.timetable .schedule .days{
+  display: flex;
+  justify-content: space-between;
+}
+
+.timetable .schedule .days .day{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8fc;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.timetable .schedule .days .day.active{
+  background-color: #076bff;
+  color: #fff;
+}
+
+.timetable .timetable-card-container .time{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timetable .timetable-card-container{
+  margin-top: 30px;
+}
+
+.timetable .timetable-card-container .time::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f8fc;
+}
+
+.timetable .timetable-card-container .card{
+  background-color: #f6f8fc;
+  margin-left: 50px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timetable .timetable-card-container .card .card-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timetable .timetable-card-container .card .card-item .participants{
+  display: flex;
+  & img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+
+.timetable .timetable-card-container .card .subject{
+  color: #585858;
+}
+
+.timetable .timetable-card-container .card .lesson{
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.timetable .timetable-card-container .card .card-item .time-range{
+  padding-left: 8px;
+  border-left: 2px solid #076bff;
+}
+/* Timetable Section CSS End */
+
+/* Upcoming events Section CSS */
+
+.heading{
+  margin-bottom: 10px;
+}
+
+.upcoming-events-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upcoming-events .card a{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  & img{
+    width: 100%;
+    border-radius: 20px;
+    filter: brightness(.7);
+  }
+}
+
+.upcoming-events .card .content{
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & small{
+    color: #fff;
+  }
+  & span{
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+
+/* Upcoming events Section CSS End*/
+
+/* Homework Progress Section CSS */
+
+.homework-progress{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.homework-progress .tasks-container h3{
+  margin-bottom: 20px;
+}
+
+.homework-progress ul li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.homework-progress ul li a {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f6fe;
+}
+
+.homework-progress ul li a .deadline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.homework-progress ul li a .deadline div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.homework-progress .filter{
+  cursor: pointer;
+  padding: 5px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  background-color: #b7d2ff;
+  border: 2px solid #076bff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.form-group input:checked + label::before {
+  background-color: #076bff;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Homework Progress Section CSS End*/
