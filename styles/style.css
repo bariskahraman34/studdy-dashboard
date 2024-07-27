@@ -39,6 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   gap: 30px;
   width: 100%;
+  max-width: 100%;
 }
 
 a{
@@ -109,15 +110,15 @@ small{
   gap: 30px;
 }
 
-.col{
+/* .col{
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+} */
 
-.d-flex{
+/* .d-flex{
   display: flex;
-}
+} */
 
 .d-flex.space-between{
   align-items: center;
@@ -126,6 +127,18 @@ small{
 
 .p-20{
   padding: 20px;
+}
+
+.card{
+  border: none;
+}
+
+.heading{
+  font-size: 24px;
+}
+
+h3{
+  font-size: 18.72px;
 }
 
 /* Global Styles End*/
@@ -161,11 +174,12 @@ small{
   }
 }
 
-.menu-item .badge{
+.pin{
   background-color: #076bff;
   color: #fff;
   border-radius: 50%;
   padding: 4px 8px;
+  font-weight: bold;
 }
 
 .menu-item.active{
@@ -248,9 +262,9 @@ small{
 
 /* Welcome Section CSS */
 
-.welcome-section{
+/* .welcome-section{
   padding: 40px 40px 20px 40px;
-}
+} */
 
 .welcome-section .welcome-text{
   & h2{
@@ -266,21 +280,20 @@ small{
 
 /* Statistics Section CSS */
 
-.statistics-section .box-container{
+/* .statistics-section .box-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
-}
+} */
 
 .statistics-section .box-container .statistic-box{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
   & p{
-    font-size: 17px;
+    font-size: 14px;
     color: #585858;
     line-height: 1.2;
+  }
+  & h2{
+    font-size: 24px;
   }
 }
 
@@ -328,8 +341,9 @@ small{
 }
 
 .timetable .schedule .days{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
 }
 
 .timetable .schedule .days .day{
@@ -408,10 +422,6 @@ small{
 
 /* Upcoming events Section CSS */
 
-.heading{
-  margin-bottom: 10px;
-}
-
 .upcoming-events-card-container{
   display: flex;
   flex-direction: column;
@@ -458,6 +468,9 @@ small{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  & h2{
+    font-size: 24px;
+  }
 }
 
 .homework-progress .tasks-container h3{
@@ -548,3 +561,13 @@ small{
 }
 
 /* Homework Progress Section CSS End*/
+
+
+/* Mobile CSS */
+
+/* Navbar CSS */
+
+.navbar-nav .nav-link.active{
+  background-color: #076bff;
+  color: #fff;
+}
